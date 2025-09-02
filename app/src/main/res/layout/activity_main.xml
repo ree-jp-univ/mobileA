@@ -8,12 +8,76 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/text"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="149dp"
+        android:layout_height="156dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="61dp"
+        app:layout_constraintBottom_toTopOf="@+id/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/monney_1" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="180dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/saveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/changeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="11dp"
+        android:text="Change"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
