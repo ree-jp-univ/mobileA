@@ -60,6 +60,7 @@ public class MainActivity2 extends AppCompatActivity {
             startActivity(intent);
         });
 
+
         binding.sendButton.setOnClickListener(view -> {
             var text = binding.editTextText2.getText().toString();
             var intent = new Intent(this, MainActivity4.class);
